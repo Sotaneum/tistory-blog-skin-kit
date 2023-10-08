@@ -1,20 +1,32 @@
 {
   "name": "tistory-blog-skin-kit",
+  "description": "Tistory 스킨 제작을 위한 bun.sh + vite 기반 템플릿입니다.",
+  "homepage": "https://github.com/Sotaneum/tistory-blog-skin-kit",
+  "readme": "https://github.com/Sotaneum/tistory-blog-skin-kit/blob/main/README.md",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "bunx --bun vite",
     "build": "rm -rf ./dist && tsc && vite build && bun run xml",
-    "xml": "bun build/create-xml.js",
+    "xml": "bun build/create-xml.ts",
     "preview": "vite preview"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.7.3",
     "@typescript-eslint/parser": "^6.7.3",
+    "bun-types": "^1.0.4",
     "eslint": "^8.50.0",
     "typescript": "^5.2.2",
     "vite": "^4.4.5"
   },
-  "license": "GNU"
+  "author": "Sotaneum <gnyontu39@gmail.com>",
+  "license": "GNU",
+  "xml": {
+    "information": {},
+    "contest": {},
+    "author": {},
+    "default": {}
+  },
+  "module": "index.ts"
 }
